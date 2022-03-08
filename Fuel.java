@@ -1,0 +1,3 @@
+enum Fuel{
+PETROL,DIESEL,COAL,ELECTRIC;
+}
