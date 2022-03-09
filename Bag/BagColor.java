@@ -1,0 +1,3 @@
+enum BagColor{
+BLACK,RED,GRAY,BLUE,PINK;
+}

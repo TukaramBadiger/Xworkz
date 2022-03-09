@@ -1,0 +1,3 @@
+enum BagUser{
+MALE,FEMALE,OTHERS;
+}

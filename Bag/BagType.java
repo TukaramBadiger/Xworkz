@@ -1,0 +1,3 @@
+enum BagType{
+LAPTOP,COLLAGE,LUGGAGE,TOUR;
+}
