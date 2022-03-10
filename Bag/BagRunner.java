@@ -14,8 +14,8 @@ System.out.println(bag2.price);
 
 BagOperator operator=new BagOperator();
 operator.display(bag);
-operator.display(bag1,"Tukaram");
-operator.display(bag2,123);
+operator.display(bag1);
+operator.display(bag2);
 
 }
 }
