@@ -133,7 +133,7 @@ public class TrainRunner {
 
 		TrainDAOImplement castedTriainDAOImplement = (TrainDAOImplement) trainDAO;
 
-		castedTriainDAOImplement.updateByTrainName("Ernakullam express", trainDTOUpdate);
+		castedTriainDAOImplement.updateByTrainName("Shatabdi express", trainDTOUpdate);
 		
 		
 		System.out.println("Before delete " + castedTriainDAOImplement.totalTrains());

@@ -28,7 +28,7 @@ public abstract class TrainDAO {
 		}
 		if (this.counter < this.trainDTOs.length) {
 			this.trainDTOs[counter] = trainDTO;
-			System.out.println("TrainDTO has been added to index @ " + this.counter);
+			System.out.println("TrainDTO has been added to index " + this.counter);
 			counter++;
 		} else {
 			System.err.println("TrainDTO is out of bounds cannot b added to DTO array list");
@@ -42,7 +42,7 @@ public abstract class TrainDAO {
 		}
 		for (int index = 0; index < this.trainDTOs.length; index++) {
 			if (this.trainDTOs[index] != null && this.trainDTOs[index].equals(trainDTO)) {
-				System.out.println("The added train DTO is found in the array @ DTO index " + index);
+				System.out.println("The added train DTO is found  " + index);
 				return true;
 			}
 		}
@@ -91,7 +91,7 @@ public abstract class TrainDAO {
 		for (int index = 0; index < this.trainDTOs.length; index++) {
 			if (this.trainDTOs[index] != null && this.trainDTOs[index].getStartingPoint().equals(startingPoint)
 					&& this.trainDTOs[index].getDestinationPoint().equals(destinationPoint)) {
-				System.out.println("The Train starting and destination point is found @ DTO index " + index);
+				System.out.println("The Train starting and destination point is found " + index);
 				return this.trainDTOs[index];
 			}
 		}

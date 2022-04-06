@@ -1,7 +1,5 @@
 package com.xworkz.train.dto;
 
-import java.util.Objects;
-
 import com.xworkz.train.constatnt.TrainType;
 
 public class TrainDTO {
