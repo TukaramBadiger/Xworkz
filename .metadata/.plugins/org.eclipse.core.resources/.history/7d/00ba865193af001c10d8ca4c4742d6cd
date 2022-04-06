@@ -1,0 +1,28 @@
+package com.xworkz.browser.BrowserRunner;
+import com.xworkz.browser.parent.Browser;
+import com.xworkz.browser.sub.MozillaBrowser;
+
+public class BrowserRunner {
+	public static void main(String [] args) throws InterruptedException		{
+		MozillaBrowser browser=new MozillaBrowser("mozilla",52.2,"MS");
+		browser.connect();
+		browser.developerTool();
+		browser.equals(browser);
+		browser.getClass();
+		browser.getCompany();
+		browser.getVersion();
+		browser.hashCode();
+		browser.notify();
+		browser.notifyAll();
+		browser.showTime();
+		browser.toString();
+		browser.wait();
+		browser.wait(1);
+		browser.developerTool();
+		browser.cleanUp();
+		browser.connect();
+		//browser.clone();
+		browser.wait(1, 1);
+	}
+
+}

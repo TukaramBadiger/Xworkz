@@ -1,0 +1,19 @@
+package Homework;
+class AtStatic
+{
+
+public void sample (String a, int b, double c)
+{
+
+
+System.out.println(" name is = " + a);
+System.out.println(" id is = " + b);
+System.out.println(" salary is = " + c);
+}
+
+
+public void main(String[] args)
+{
+sample("ram",120,1990.5);
+}
+}

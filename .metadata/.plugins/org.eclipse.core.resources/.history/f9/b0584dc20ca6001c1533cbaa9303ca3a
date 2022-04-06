@@ -1,0 +1,46 @@
+package com.xworkz.inheritance;
+
+import com.xworkz.inheritance.bread.Tyre;
+
+public class TyreRunner {
+
+	public static void main(String[] args) {
+		Tyre tyre=new Tyre();
+		System.out.println(tyre);
+
+		int tyre2=tyre.hashCode();
+		System.out.println(tyre2);
+		
+		String tyre3=tyre.toString();
+		System.out.println(tyre3);
+		
+		Tyre tyre4=new Tyre("MRF","2010",false);
+				System.out.println(tyre4);
+		
+				int tyre5=tyre4.hashCode();
+		System.out.println(tyre5);
+
+
+		String tyre6=tyre.toString();
+		System.out.println(tyre6);
+
+		
+		Tyre tyre7=new Tyre("MRF","2010",false);
+		System.out.println(tyre7);
+
+		int tyre8=tyre.hashCode();
+        System.out.println(tyre8);
+
+
+        String tyre9=tyre.toString();
+        System.out.println(tyre9);
+
+		
+
+         boolean ref=tyre7.equals(tyre7);
+         System.out.println(ref);
+
+	}
+	}
+
+

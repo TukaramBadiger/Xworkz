@@ -1,0 +1,75 @@
+package com.xworkz.inheritance.bread;
+
+public class Apple {
+
+      String product;
+      String quality;
+      double price;
+      boolean available;
+      
+      
+    public  Apple(){
+    	  System.out.println("Steve jobs");
+      }
+	
+      
+     
+
+	@Override
+	public int hashCode() {
+		return 636969;
+	}
+
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+	 public Apple(String product,String quality,double price,boolean available) {
+   	  super();
+   	  this.product=product;
+   	  this.quality=quality;
+   	  this.price=price;
+   	  this.available=available;
+     
+     }
+
+      
+	
+	
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj==null) {
+			System.out.println("obj is null");
+		}
+		else {
+			System.out.println("objis not null");
+		}
+		if (obj instanceof Apple) {
+			System.out.println("instance of");
+		Apple apple=(Apple)obj;
+		String product1=apple.product;
+		String quality1=apple.quality;
+		Object available1=apple.available;
+		if(this.product.equals(product1) && this.quality.equals(quality1) && this.available.equality(available1)) {
+			System.out.println("both are equal");
+		}
+		
+		else {
+			System.out.println("both are not equal");
+		}
+		
+		}
+		
+		
+		
+		return true;
+	}
+	
+
+      
+	
+	}
+
+

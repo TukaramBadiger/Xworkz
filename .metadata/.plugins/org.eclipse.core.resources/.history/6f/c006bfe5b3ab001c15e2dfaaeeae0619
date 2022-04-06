@@ -1,0 +1,266 @@
+package com.xworkz.encapsulation.dto;
+
+public class ProductDTO {
+
+	private String productName="Bike";
+	private String model;
+	private double price;
+	private double weight;
+	private double average;
+	private String company;
+	private String type;
+
+	
+	public ProductDTO() {
+		System.out.println("Product is Bike");
+	}
+	
+	public String getPructName() {
+		return this.productName;
+	}
+	public void setProductName(String productName) {
+		this.productName=productName;
+	}
+	public String getModel() {
+		return this.model;
+		
+	}
+	public void setModel(String model) {
+		this.model=model;
+		
+	}
+	public double getPrice() {
+		return this.price;
+	}
+	public void setPrice(double price) {
+		this.price=price;
+	}
+	public double getWeight() {
+		return this.weight;
+		
+	}
+	public void setWeight(double weight) {
+		this.weight=weight;
+	}
+	
+	public double getAverage() {
+		return this.average=average;
+		
+	}
+	public void setAverage(double average) {
+		this.average=average;
+	}
+	
+	public String getCompany() {
+		return this.company=company;
+		
+	}
+	public void setCompany(String company) {
+		this.company=company;
+	}
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type=type;
+	}
+	
+	private String productName2="car";
+	private double carPrice;
+	private double carAverage;
+	private double carWeight;
+	private boolean ac;
+	private String fuel;
+	private String carCompany;
+	private boolean autoPilot;
+	
+	public String getProductName2() {
+		return this.productName;
+	}
+	  public void setProduct(String productName) {
+	  this.productName=productName;
+	  }
+	  public double getCarprice() {
+		  return this.carPrice;
+	  }
+	  public void setCarPrice(double carPrice) {
+		  this.carPrice=carPrice;
+	  }
+	  public double getCarAverage() {
+		  return this.average;
+	  }
+	  public void setCarAverage(double carAverage) {
+		  this.carAverage=carAverage;
+		  
+	  }
+	  public double getCarWeight() {
+		  return this.carWeight;
+
+	  }
+	  public void setcarWeight(double carWeight) {
+		  this.carWeight=carWeight;
+	  }
+	  public boolean isAc() {
+		  return this.ac;
+	  }
+	  public void setAc(boolean ac) {
+		  this.ac=ac;
+	  }
+	  
+	  public String getfuel() {
+			return this.fuel;
+	  }
+	  
+	  public void setfuel(String fuel) {
+		  this.fuel=fuel;
+	  }
+
+	  public String getCarCompany() {
+			return this.carCompany;
+	  }
+	  
+	  public void setCarCompany(String carCompany) {
+		  this.carCompany=carCompany;
+	  }
+	  public boolean isAutoPilot() {
+		  return this.autoPilot;
+	  }
+	  public void setAutoPilot(boolean autoPilot) {
+		  this.autoPilot=autoPilot;
+	  }
+	
+	  
+	  private String brand;
+	  private double podsprice;
+	  private double batteryBackUp;
+	  private String quality;
+	  private String podstype;
+	  private boolean mike;
+	  
+	  
+	  public String getBrand() {
+			return this.fuel;
+	  }
+	  
+	  public void setBrand(String brand) {
+		  this.brand=brand;
+	  }
+	  public double getPodsprice() {
+		  return this.podsprice;
+
+	  }
+	  public void setPodsprice(double podsprice) {
+		  this.podsprice=podsprice;
+	  }
+	  
+	
+	  public double getBatteryBackUp() {
+		  return this.podsprice;
+
+	  }
+	  public void setBatteryBackUp(double batteryBackUp) {
+		  this.batteryBackUp=batteryBackUp;
+	  }
+	
+	  public String getQuality() {
+			return this.quality;
+	  }
+	  
+	  public void setQuality(String quality) {
+		  this.quality=quality;
+	  }
+	  public String getPodstype() {
+			return this.podstype;
+	  }
+	  
+	  public void setPodstype(String podstype) {
+		  this.podstype=podstype;
+	  }
+	  public boolean ismike() {
+		  return this.mike;
+	  }
+	  public void setMike(boolean mike) {
+		  this.mike=mike;
+	  }
+	  
+	  private String mobileName;
+	  private double mobilePrice;
+	  private String mobileModel;
+	  private double mobileWeight;
+	  private String mobileType;
+	  private String mobileCompany;
+	  private int ram;
+	  private int rom;
+	  private String processor;
+	  private double BackUp;
+	  
+	  public String getMobileName() {
+			return this.podstype;
+	  }
+	  
+	  public void setMobileName(String mobileName) {
+		  this.mobileName=mobileName;
+	  }
+	  
+	  public double getMobilePrice() {
+		  return this.podsprice;
+
+	  }
+	  public void setMobilePrice(double mobilePrice) {
+		  this.mobilePrice=mobilePrice;
+	  }
+	  public String getMobileModel() {
+			return this.podstype;
+	  }
+	  
+	  public void setMobileModel(String mobileModel) {
+		  this.mobileModel=mobileModel;
+	  }
+	  
+	  public double getMobileWeight() {
+		  return this.mobileWeight;
+
+	  }
+	  public void setMobileWeight(double mobileWeight) {
+		  this.mobileWeight=mobileWeight;
+	  }
+	  
+	  public String getMobileType() {
+			return this.mobileType;
+	  }
+	  
+	  public void setMobileType(String mobileType) {
+		  this.mobileType=mobileType;
+	  }
+	  
+	  public String getMobileCompany() {
+			return this.mobileCompany;
+	  }
+	  
+	  public void setMobileCompany(String mobileCompany) {
+		  this.mobileCompany=mobileCompany;
+	  }
+	  
+	  public int getRam() {
+			return this.ram;
+		}
+		public void setRam(int ram) {
+			this.ram=ram;
+			
+		}
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+}

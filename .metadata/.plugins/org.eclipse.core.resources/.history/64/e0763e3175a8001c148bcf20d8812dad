@@ -1,0 +1,73 @@
+package com.xworkz.inheritance.bread;
+
+public class Mobile {
+	String brand;
+	String model;
+	long imeiNo;
+	double price;
+	
+	  public Mobile() {
+		  super();
+			System.out.println("old mobile");
+			
+		}
+
+	@Override
+	public int hashCode() {
+		return 25745;
+	}
+
+
+	@Override
+        public String toString() {
+		return "redmi";
+	}
+	
+	public Mobile(String brand,String model,long imeiNo,double price){
+		 super();
+		this.brand=brand;
+		this.model=model;
+		this.imeiNo=imeiNo;
+		this.price=price;
+		System.out.println(brand);
+		System.out.println(model);
+		System.out.println(imeiNo);
+		System.out.println(price);
+
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj==null) {
+			System.out.println("null value");
+		}
+		else {
+			System.out.println("not null value");
+		}
+		if(obj instanceof Mobile) {
+			System.out.println("mobile instance");
+		Mobile mobile=(Mobile)obj;
+		String mobile1=mobile.brand;
+		String mobile2=mobile.model;
+		
+	
+		if(this.brand.equals(mobile1)   && this.model.equals(mobile2)) {
+			System.out.println("equaling brand and model");		
+			}
+		
+		}
+		
+		
+		else {
+			System.out.println("no printing");
+		
+		
+	}
+		return false;
+
+	}
+	
+	
+	
+	}

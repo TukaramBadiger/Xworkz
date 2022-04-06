@@ -1,0 +1,21 @@
+package Homework;
+class AtStatic
+{
+String name;
+int id;
+double sal;
+public void Sample (String a, int b, double c)
+{
+// System.out.println("This is sample const...");
+name="ram";
+id=185;
+sal=10000;
+return;
+}
+public void display()
+{
+System.out.println(" name is = " + name);;
+System.out.println(" id is = " + id);;
+System.out.println(" salary is = " + sal);;
+}
+}

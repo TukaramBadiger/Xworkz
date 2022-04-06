@@ -1,0 +1,12 @@
+package Homework;
+class AtStatic {
+int d=150;
+void demo() {
+}
+
+public static void main(String[] args){
+	new AtStatic().demo();
+	System.out.println(new AtStatic().demo());
+	
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;association/src/com/xworkz/iplTeams/iplTeamDAO&apos; to &apos;dao&apos;" description="Rename resource &apos;iplTeamDAO&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/xworkz/iplTeams/iplTeamDAO" name="dao" stamp="1649182562293" updateReferences="true"/>
+</session>

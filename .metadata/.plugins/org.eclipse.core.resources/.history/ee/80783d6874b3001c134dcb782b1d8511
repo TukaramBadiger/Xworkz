@@ -1,0 +1,61 @@
+package com.xworkz.train.dao;
+
+import com.xworkz.train.dto.TrainDTO;
+
+public class TrainDAO {
+	/*Manage Data of Train
+
+
+TrainDTO: id,number,type:enum,name,startingPoint, destination
+
+
+TrainDAO : create(TrainDTO dto), TrainDTO findByNumber(String number),TrainDTO findByName(String name), findByStartingPointAndDestination(String starting,String destination), int totalTrains();
+
+
+TrainDTO is duplicate if  number,type and name is same 
+
+Should allow max 10 trains only */
+
+	private TrainDTO[] trainDTO=new TrainDTO[10];
+	private int trainIndex=0;
+	
+	public TrainDAO() {
+		System.out.println("create" + this.getClass().getSimpleName());
+
+	}
+	
+	public boolean create(TrainDTO dto) {
+		System.out.println("creating Train "+dto.getID());
+		System.out.println("creating Train "+dto.getNumber());
+		System.out.println("creating Train "+dto.getType());
+		System.out.println("creating Train "+dto.getName());
+		System.out.println("creating Train "+dto.getStartingPoint());
+
+	
+	if (trainIndex<this.trainDTO.length && this.isDuplicates(dto)) {
+		this.trainDTO[trainIndex]=dto;
+		trainIndex++;
+		System.out.println("Train Added"+this.trainIndex);
+		return true;
+	}
+
+	else {
+		System.out.println("train Cannot be Added");
+	}
+	return false;
+	
+	}
+
+  public boolean isDuplicates(TrainDTO dto) {
+	  for(int index=0;index<this.trainDTO.length;index++) {
+		  TrainDTO dtoFromArray=this.trainDTO[index];
+		  if(dtoFromArray!=null) {
+			  if(dtoFromArray.equals(dtoFromArray)) {
+				  System.out.println("Train is Already found "+dto);
+			  }
+		  }
+	  }
+	  return false;
+  }
+
+}

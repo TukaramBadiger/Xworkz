@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Homework.Hometown"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.xworkz.association.VendorType"/>
+    <fullyQualifiedTypeName name="com.xworkz.association.hotel.Vendor"/>
+    <fullyQualifiedTypeName name="com.xworkz.association.hotel.Hotel"/>
+    <fullyQualifiedTypeName name="com.xworkz.expenditure.dto.ExpenditureDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.expenditure.dao.ExpenditureDAO"/>
+    <fullyQualifiedTypeName name="com.xworkz.expenditure.dao.ExpenditurePeriod"/>
+</qualifiedTypeNameHistroy>

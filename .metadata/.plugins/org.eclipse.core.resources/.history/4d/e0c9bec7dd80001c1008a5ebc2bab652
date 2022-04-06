@@ -1,0 +1,16 @@
+package Homework;
+
+public class AtStatic {
+	void AtStatic{
+	int age=25;
+	String name="Ram"; 
+	System.out.println(age);
+	System.out.println(name);
+	
+
+}
+public void main(String[] args)
+AtStatic();
+}
+}
+

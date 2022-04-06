@@ -1,0 +1,13 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="com.xworkz.expenditure.dao.ExpenditurePeriod"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="com.xworkz.expenditure.dao.ExpenditurePeriod"/></lhs><lhs name\="com.xworkz.expenditure.dao.ExpenditurePeriod"><rhs name\="com.xworkz.expenditure.dao.ExpenditurePeriod"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="DEFAULT_TRAIN_MESSAGE">    \tSystem.out.println("create"+this.getClass().getSimpleName());&\#13;\r\n</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="default_Constructor_message">    \tSystem.out.println("create"+this.getClass().getSimpleName());&\#13;\r\n</template></templates>
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

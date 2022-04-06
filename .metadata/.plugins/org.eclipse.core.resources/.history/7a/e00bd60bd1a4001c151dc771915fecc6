@@ -1,0 +1,8 @@
+package com.xworkz.inheritance;
+
+public class Aeroplane {
+	
+	public Aeroplane(){
+		System.out.println("aeroplane");
+	}
+}

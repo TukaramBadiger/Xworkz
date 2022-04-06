@@ -1,0 +1,5 @@
+package com.xworkz.train.constatnt;
+
+public enum TrainType {
+
+}

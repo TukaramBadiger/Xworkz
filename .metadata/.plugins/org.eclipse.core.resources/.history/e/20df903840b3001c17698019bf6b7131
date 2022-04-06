@@ -1,0 +1,127 @@
+package com.xworkz.train.trainRunner;
+
+import com.xworkz.train.constatnt.TrainType;
+import com.xworkz.train.dao.TrainDAO;
+import com.xworkz.train.dto.TrainDTO;
+
+public class TrainRunner {
+
+	
+	public static void main(String[] args) {
+		TrainDTO dto=new TrainDTO();
+		/*dto.setDestination("Bangalore");
+		dto.setID("KSR25642");
+		dto.setName("Bijapur Express");
+		dto.setNumber(26542);
+		dto.setStartingPoint("Bijapur");
+		dto.setType(TrainType.EXPRESS);*/
+		
+		TrainDAO dao=new TrainDAO();
+		boolean create=dao.create(dto);
+		System.out.println("create"+create);
+		
+		
+		
+		TrainDTO dto1=new TrainDTO();
+		dto1.setDestination("Mysore");
+		dto1.setID("msr2455");
+		dto1.setName("MSR Express");
+		dto1.setNumber(26542);
+		dto1.setStartingPoint("bagalkot");
+		dto1.setType(TrainType.PASSENGER);
+		
+		
+		
+		
+		TrainDTO dto2=new TrainDTO();
+		dto2.setDestination("Bangalore");
+		dto2.setID("KSR25642");
+		dto2.setName("Bijapur Express");
+		dto2.setNumber(26542);
+		dto2.setStartingPoint("Bijapur");
+		dto2.setType(TrainType.EXPRESS);
+		
+		TrainDTO dto3=new TrainDTO();
+		dto3.setDestination("Bangalore");
+		dto3.setID("KSR25642");
+		dto3.setName("Bijapur Express");
+		dto3.setNumber(26542);
+		dto3.setStartingPoint("Bijapur");
+		dto3.setType(TrainType.EXPRESS);
+		
+		TrainDTO dto4=new TrainDTO();
+		dto4.setDestination("chennai");
+		dto4.setID("ch25455");
+		dto4.setName("nijam Express");
+		dto4.setNumber(4524);
+		dto4.setStartingPoint("bangalore");
+		dto4.setType(TrainType.EXPRESS);
+		
+		
+		TrainDTO dto5=new TrainDTO();
+		dto5.setDestination("mumbai");
+		dto5.setID("mb545512");
+		dto5.setName("shivaji");
+		dto5.setNumber(25448);
+		dto5.setStartingPoint("pune");
+		dto5.setType(TrainType.PASSENGER);
+	
+	
+		TrainDTO dto6=new TrainDTO();
+		dto6.setDestination("kalkatta");
+		dto6.setID("kl25164");
+		dto6.setName("Shatabdi Express");
+		dto6.setNumber(25455);
+		dto6.setStartingPoint("Hyderabad");
+		dto6.setType(TrainType.MONTHLY);
+		
+		
+		TrainDTO dto7=new TrainDTO();
+		dto7.setDestination("Bangalore");
+		dto7.setID("KSR25584");
+		dto7.setName("Shatabdi Express");
+		dto7.setNumber(47825);
+		dto7.setStartingPoint("Hubli");
+		dto7.setType(TrainType.WEEKLY);
+		
+		TrainDTO dto8=new TrainDTO();
+		dto8.setDestination("mangalore");
+		dto8.setID("mlr55485");
+		dto8.setName("Shivaji");
+		dto8.setNumber(54545);
+		dto8.setStartingPoint("Belgaum");
+		dto8.setType(TrainType.GOODS);
+		
+		
+		TrainDTO dto9=new TrainDTO();
+		dto9.setDestination("Hasan");
+		dto9.setID("hs44555");
+		dto9.setName("chennamma express");
+		dto9.setNumber(55557);
+		dto9.setStartingPoint("Bijapur");
+		dto9.setType(TrainType.EXPRESS);
+		
+		
+		TrainDTO dto10=new TrainDTO();
+		dto10.setDestination("Kashmir");
+		dto10.setID("ksm545222");
+		dto10.setName("Army");
+		dto10.setNumber(26542);
+		dto10.setStartingPoint("bagalkot");
+		dto10.setType(TrainType.ARMY);
+		
+		dao.create(dto);
+		dao.create(dto1);
+		dao.create(dto2);
+		dao.create(dto3);
+		dao.create(dto4);
+		dao.create(dto5);
+		dao.create(dto6);
+		dao.create(dto7);
+		dao.create(dto8);
+		dao.create(dto9);
+		dao.create(dto10);
+
+	
+	}
+}
