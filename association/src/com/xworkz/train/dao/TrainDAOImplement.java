@@ -19,10 +19,8 @@ public class TrainDAOImplement extends TrainDAO {
 		System.out.println("Index to be updated is " + index);
 		superArray[index] = trainDTOUpdate;
 		}
-
 		}
 		}
-
 	    }
 
 	public void deleteByTrainName(String trainName) {
@@ -41,9 +39,8 @@ public class TrainDAOImplement extends TrainDAO {
 			superArray[index] = null;
 
 			}
-
 			}
-		 }
-	}
+		    }
+	        }
 
 }

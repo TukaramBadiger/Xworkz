@@ -1,6 +1,7 @@
 
 package com.xworkz.iplTeams;
 
+import com.xworkz.iplTeams.dao.iplTeamDAO;
 import com.xworkz.iplTeams.dao.iplTeamDAOImplementation;
 import com.xworkz.iplTeams.dto.iplTeamDTO;
 
@@ -154,14 +155,24 @@ public class iplTeamRunner {
 			castedDAO.save(ipldto12);
 			castedDAO.save(ipldto13);
 			castedDAO.save(ipldto14);
-			castedDAO.IplTeamDTOfindByName("RCB");
-			castedDAO.IplTeamDTOfindByName("Du Plessis");
-			castedDAO.findByNameAndSponsor("RCB", "muthoot fincorp");
-			castedDAO.findByNameAndSponsorAndCaptain("RR", "Happilo"," Sanju Samson");
-			
+			iplTeamDTO vto=castedDAO.IplTeamDTOfindByName("Kochi Tuskers kerala");
+			System.out.println("The total number of teams " + vto);
 
+			castedDAO.IplTeamDTOfindByName("RPS");
+			castedDAO.findByNameAndSponsor("RCB", "muthoot fincorp");
+			castedDAO.findByNameAndSponsorAndCaptain("RR", "Happilo","Sanju Samson");
+			castedDAO.totalTeams();
+		//	int total = castedDAO.totalTeams();
+			System.out.println("The total number of teams " + castedDAO.totalTeams());
 	
-	
+			System.out.println();
+			
+			castedDAO.saveMultiple(ipldto14, ipldto2);
+			castedDAO.saveMultiple(ipldto1, ipldto8);
+			
+			castedDAO.upDateSponserByName("RR","pepsi");
+			castedDAO.upDateCaptainByName("virat kohli", "RCB");
+
 	}
 	
 	

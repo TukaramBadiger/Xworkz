@@ -8,4 +8,9 @@
     <fullyQualifiedTypeName name="com.xworkz.expenditure.dto.ExpenditureDTO"/>
     <fullyQualifiedTypeName name="com.xworkz.expenditure.dao.ExpenditureDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.expenditure.dao.ExpenditurePeriod"/>
+    <fullyQualifiedTypeName name="com.xworkz.train.constatnt.TrainType"/>
+    <fullyQualifiedTypeName name="com.xworkz.train.dto.TrainDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.iplTeams.dto.iplTeamDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.iplTeams.dao.iplTeamDAOImplementation"/>
+    <fullyQualifiedTypeName name="com.xworkz.iplTeams.dao.iplTeamDAO"/>
 </qualifiedTypeNameHistroy>
