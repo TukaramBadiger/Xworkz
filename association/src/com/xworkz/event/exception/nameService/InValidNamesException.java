@@ -1,4 +1,4 @@
-package com.xworkz.exception.nameService;
+package com.xworkz.event.exception.nameService;
 
 public class InValidNamesException extends Exception{
 	

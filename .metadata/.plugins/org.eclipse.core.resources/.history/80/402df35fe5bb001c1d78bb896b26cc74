@@ -1,0 +1,17 @@
+package com.xworkz.javaInterface;
+
+public interface CustomGoodsRule {
+
+	default String[] validItems() {
+		System.out.println("leagle items for carry");
+		
+		return this.validItems();
+		
+	}
+	
+	String[] nonValidItems();
+	
+	
+	
+	
+}

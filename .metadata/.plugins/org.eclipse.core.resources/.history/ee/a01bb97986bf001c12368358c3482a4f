@@ -1,0 +1,22 @@
+package com.xworkz.clone;
+
+public class ShallowClone {
+	
+	int a;
+	int b;
+	
+	
+	public static void main(String [] args) {
+		ShallowClone shallow=new ShallowClone();
+		try {
+			ShallowClone shallow1=(ShallowClone)shallow.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		
+	}
+	
+
+}

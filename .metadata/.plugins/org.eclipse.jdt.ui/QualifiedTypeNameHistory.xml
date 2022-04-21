@@ -13,4 +13,10 @@
     <fullyQualifiedTypeName name="com.xworkz.iplTeams.dto.iplTeamDTO"/>
     <fullyQualifiedTypeName name="com.xworkz.iplTeams.dao.iplTeamDAOImplementation"/>
     <fullyQualifiedTypeName name="com.xworkz.iplTeams.dao.iplTeamDAO"/>
+    <fullyQualifiedTypeName name="com.xworkz.exception.nameService.InValidNameException"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
 </qualifiedTypeNameHistroy>

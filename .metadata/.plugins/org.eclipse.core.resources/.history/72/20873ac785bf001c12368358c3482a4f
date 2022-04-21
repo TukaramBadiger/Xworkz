@@ -1,0 +1,21 @@
+package com.xworkz.clone;
+
+public class ShallowClone {
+	
+	int a;
+	int b;
+	
+	
+	public static void main(String [] args) {
+		ShallowClone shallow=new ShallowClone();
+		shallow.a=5;
+		shallow.b=4;
+		ShallowClone shallow1=shallow;
+		System.out.println("true if shallow: "+shallow.a+""+shallow.b);
+		System.out.println(shallow==shallow);
+		
+		
+	}
+	
+
+}

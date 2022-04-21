@@ -1,5 +1,5 @@
-package com.xworkz.exception.nameService;
-import com.xworkz.exception.nameService.NamesService;
+package com.xworkz.event.exception.nameService;
+import com.xworkz.event.exception.nameService.NamesService;
 
 public class NameServiceRunner {
 

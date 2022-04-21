@@ -1,4 +1,4 @@
-package com.xworkz.exception;
+package com.xworkz.event.exception;
 
 public class exceptionRunner {
 

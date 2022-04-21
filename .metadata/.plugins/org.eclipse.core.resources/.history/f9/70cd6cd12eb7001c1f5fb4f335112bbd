@@ -1,0 +1,5 @@
+package com.xworkz.exception;
+
+public class DAO {
+
+}

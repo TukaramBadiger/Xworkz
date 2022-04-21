@@ -1,0 +1,22 @@
+package com.xworkz.exception.nameService;
+import com.xworkz.exception.nameService.NameService;
+
+public class NameServiceRunner {
+
+	public static void main(String[] args) throws InValidNamesException {
+NameService nameService=new NameService();
+nameService.add("ram");
+nameService.add("bhim");
+nameService.add("pk");
+nameService.add("suyog");
+nameService.add("-mani");
+	
+}
+		
+		
+		
+		
+		
+	}
+
+

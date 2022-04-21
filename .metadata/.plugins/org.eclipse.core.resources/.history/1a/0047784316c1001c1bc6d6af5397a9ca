@@ -1,0 +1,7 @@
+package com.xworkz.Criminal;
+
+public interface CriminalDAO {
+	
+	boolean save(CriminalDTO dto);	
+
+}

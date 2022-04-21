@@ -1,4 +1,4 @@
-package com.xworkz.exception;
+package com.xworkz.event.exception;
 
 import com.xworkz.iplTeams.dto.iplTeamDTO;
 
@@ -14,19 +14,19 @@ public DAO() {
 }
 
 
-public  void save(DTO dto)
+/*public  void save(DTO dto)
 {
 
 	System.out.println("Created save dto");
 	
-	if(dto!=null  && index<this.dto.l) 
+	if(dto!=null  && index<this.dto[index]) 
 	{
 		dto[index]=dto;
 		index++;
 		System.out.println("DTO created "+dto);
 		
 		
-	}
+	}*/
 	
 	
 }
@@ -41,4 +41,4 @@ public  void save(DTO dto)
 
 
 
-}
+

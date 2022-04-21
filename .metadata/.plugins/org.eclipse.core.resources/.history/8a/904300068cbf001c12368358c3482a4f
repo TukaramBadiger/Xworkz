@@ -1,0 +1,55 @@
+package com.xworkz.serialize;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.math.BigDecimal;
+
+public class serializeRunner {
+	
+	
+	public static void main(String[] args) {
+		
+		serielization slz=new serielization("virat",32,new BigDecimal("Nothing"));
+		byte[] bytes=convertObjectToBytes(slz);
+		
+		serielization s=(serielization) convertBytesToObject(bytes);
+		
+		System.out.println(s);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	private static Object convertBytesToObject(byte[] bytes) {
+            InputStream is=new ByteArrayInputStream(bytes);
+            
+		
+		return null;
+	}
+
+	private static byte[] convertObjectToBytes(serielization slz) {
+		ByteArrayOutputStream boas=new ByteArrayOutputStream();
+		
+		return null;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

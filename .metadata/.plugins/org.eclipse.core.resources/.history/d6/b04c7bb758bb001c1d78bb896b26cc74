@@ -1,0 +1,5 @@
+package com.xworkz.exception.readAndWrite;
+
+public class ReadAndWrite {
+
+}

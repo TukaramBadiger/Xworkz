@@ -1,0 +1,50 @@
+package com.xworkz.Criminal;
+
+public class CriminalDTO {
+	
+	
+	
+	String id;
+	String name;
+	String offence;
+	String imprisonment;
+	String jailName;
+	
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getOffence() {
+		return offence;
+	}
+	public void setOffence(String offence) {
+		this.offence = offence;
+	}
+	public String getImprisonment() {
+		return imprisonment;
+	}
+	public void setImprisonment(String imprisonment) {
+		this.imprisonment = imprisonment;
+	}
+	public String getJailName() {
+		return jailName;
+	}
+	public void setJailName(String jailName) {
+		this.jailName = jailName;
+	}
+	
+	
+	
+	
+
+}

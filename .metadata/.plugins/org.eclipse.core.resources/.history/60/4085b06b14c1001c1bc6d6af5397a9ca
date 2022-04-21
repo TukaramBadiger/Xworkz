@@ -1,0 +1,5 @@
+package com.xworkz.commerce.dao;
+
+public class CustomerDAOImpl {
+
+}
