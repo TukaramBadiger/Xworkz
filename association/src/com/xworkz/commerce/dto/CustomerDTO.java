@@ -15,8 +15,7 @@ public class CustomerDTO implements Serializable {
 	private CustomerType customerType;
 	private String alternativeEmail;
 	private AddressDTO addressDTO;
-	
-	
+
 	
 	public int getId() {
 		return id;

@@ -19,6 +19,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 			this.customerDTOs[this.count]=customerDTO;
 			System.out.println("Customer DTO is saved @ index" + this.count);
 			this.count++;
+	
 			return true;
 		}
 		System.out.println("DTO array is Full");
@@ -48,14 +49,20 @@ public class CustomerDAOImpl implements CustomerDAO {
          for	(int i=0; i<customerDTOs.length; i++)
     	 {
     		 if(this.customerDTOs[i]!=null && this.customerDTOs[i].getName().equals(name)) {
-    			 System.out.println("Customer Name is found @ DTO index " + i);
+    			 System.out.println("Customer Name is found at DTO  " + i);
     			 return customerDTOs[i];
     		 }
     	 }
      }
-     System.out.println("Customer Name is not found");
+     System.out.println("not found");
 	return null;
 	
 	}
+	
+	
+	
+	
+	
+	
 
 }

@@ -19,7 +19,7 @@ public class CriminalService {
 	public void validateAndsave(CriminalDTO dto)
 	{   
 	       if(dto!=null) {
-	    	   System.out.println("Crimainal name is");
+	    	   System.out.println("Crimainal name is"+dto.getName());
 	       }else
 	       {
 	    	   System.out.println("no name in Crimianal list");
