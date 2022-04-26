@@ -56,58 +56,58 @@ public class WashingMachineRunner {
 	System.out.println("Total Washing Machines " + wmd.size());
 	System.out.println("================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
-		System.out.println(wmdto);
+		System.out.println(WMdto);
 	}
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
-		if(wmdto.getPrice()<5000 ) 
+		if(WMdto.getPrice()<5000 ) 
 		{
-		     System.out.println("Washing Machine price are greater than 5000 : "+ ""+ wmdto);
+		     System.out.println("Washing Machine price are greater than 5000 : "+ ""+ WMdto);
 		     
 		}
 
 	}
 	System.out.println("======================================================================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getPrice()>5000) 
+		if(WMdto.getPrice()>5000) 
 		{
-			System.out.println("Washing Machine price are leeser than 5000 :" + "" +wmdto);
+			System.out.println("Washing Machine price are leeser than 5000 :" + "" +WMdto);
 		}
 	}
 	
 	System.out.println("======================================================================================================");
 		
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getCapacity()>5) 
+		if(WMdto.getCapacity()>5) 
 		{
-		System.out.println("Washing Machine capacity is greater than 5kg :" + "" +wmdto);
+		System.out.println("Washing Machine capacity is greater than 5kg :" + "" +WMdto);
 		}
 	}
 	System.out.println("======================================================================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getCapacity()>5 &&  wmdto.getCapacity()<15) 
+		if(WMdto.getCapacity()>5 &&  WMdto.getCapacity()<15) 
 		{
-		System.out.println("Washing Machine capacity is greater than 5kg and lesser than 15 :" + "" +wmdto);
+		System.out.println("Washing Machine capacity is greater than 5kg and lesser than 15 :" + "" +WMdto);
 		}
 	}
 	
 	System.out.println("======================================================================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getCapacity()>15) 
+		if(WMdto.getCapacity()>15) 
 		{
 		System.out.println("Washing Machine capacity is greater than 15kg :" + "" +wmdto);
 		}
@@ -115,21 +115,21 @@ public class WashingMachineRunner {
 	
 	System.out.println("======================================================================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getBrand()=="F") 
+		if(WMdto.getBrand()=="F") 
 		{
-		System.out.println("Washing Machine has F in it :"+ wmdto);
+		System.out.println("Washing Machine has F in it :"+ WMdto);
 		}
 		
 	}
 	System.out.println("======================================================================================================");
 	
-	for(WashingMachineDTO wmdto:wmd) 
+	for(WashingMachineDTO WMdto:wmd) 
 	{
 		
-		if(wmdto.getBrand().toUpperCase()!=null) 
+		if(WMdto.getBrand().toUpperCase()!=null) 
 		{
 	            System.out.println("Washing Machine brand name are in Upper case : " + wmdto);
 		}

@@ -2,6 +2,7 @@ package collection.com.xworkz.politics.dao;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 import collection.com.xworkz.politics.dao.PoliticalPartyDAO;
 import collection.com.xworkz.politics.dto.PoliticalPartyDTO;
@@ -19,11 +20,28 @@ public class PoliticalPartyDAOImpl implements PoliticalPartyDAO{
 	party.add(index,dto);
 	System.out.println(party.get(index));
 	index++;
-		return false;
+		return true;
 	}
 
+	public void addingDTOelementsToCollection(PoliticalPartyDTO dto) {
+		party.add(dto);
+		
+	}
+	public void iterator() {
+		System.out.println("iterator");
+	}
+	
+	ListIterator<PoliticalPartyDTO> iter=party.listIterator<>();
+	
+	while(iter.hasNext()) {
+		System.out.println("iterator"+iter.hasNext());
+	}
+	
+	
+	
+	
 	@Override
-	public boolean deleteByName(String name) {
+	public void deleteByName(String name) {
 		System.out.println("finding Name");
 		for(int i=0;i<=party.size();i++) {
 			if(party.get(i).getName().equals(name)) {
@@ -35,9 +53,9 @@ public class PoliticalPartyDAOImpl implements PoliticalPartyDAO{
 		
 		
 		
-		return false;
+		
 	}
 
-	
-
 }
+
+
