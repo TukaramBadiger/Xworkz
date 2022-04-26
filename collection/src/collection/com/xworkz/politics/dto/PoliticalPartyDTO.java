@@ -10,6 +10,7 @@ public class PoliticalPartyDTO {
 	private int noOfMps;
 	
 	
+	
 	public PoliticalPartyDTO(int id, String name, String presidentName, String nationalParty, int noOfMps) {
 		super();
 		this.id = id;

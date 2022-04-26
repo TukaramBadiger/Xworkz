@@ -7,55 +7,56 @@ import java.util.ListIterator;
 import collection.com.xworkz.politics.dao.PoliticalPartyDAO;
 import collection.com.xworkz.politics.dto.PoliticalPartyDTO;
 
-public class PoliticalPartyDAOImpl implements PoliticalPartyDAO{
-	
-   List<PoliticalPartyDTO> party= new LinkedList<PoliticalPartyDTO>();
-	
-	private int index=0;
+public class PoliticalPartyDAOImpl implements PoliticalPartyDAO {
+
+     private int index=0;	
+	List<PoliticalPartyDTO> list = new LinkedList<PoliticalPartyDTO>();
+
+	public PoliticalPartyDAOImpl() {
+		System.out.println("created ".concat(this.getClass().getSimpleName()));
+	}
 
 	@Override
 	public boolean save(PoliticalPartyDTO dto) {
 		
-	System.out.println("save");
-	party.add(index,dto);
-	System.out.println(party.get(index));
-	index++;
+		list.add(dto);
+		System.out.println(list.get(index));
+		index++;
 		return true;
 	}
 
-	public void addingDTOelementsToCollection(PoliticalPartyDTO dto) {
-		party.add(dto);
-		
+	public void display() {
+		System.out.println(list);
 	}
-	public void iterator() {
-		System.out.println("iterator");
-	}
-	
-	ListIterator<PoliticalPartyDTO> iter=party.listIterator<>();
-	
-	while(iter.hasNext()) {
-		System.out.println("iterator"+iter.hasNext());
-	}
-	
-	
-	
-	
+
 	@Override
-	public void deleteByName(String name) {
-		System.out.println("finding Name");
-		for(int i=0;i<=party.size();i++) {
-			if(party.get(i).getName().equals(name)) {
-				System.out.println(party.get(i));
-				party.remove(i);
+	public PoliticalPartyDTO deleteByName(String name) {
+		//System.out.println(list.size());
+		if (name != null) {
+			
+		ListIterator<PoliticalPartyDTO> itrt = list.listIterator();
+		
+		while (itrt.hasNext()) {
+			
+			PoliticalPartyDTO dto = (PoliticalPartyDTO) itrt.next();
+		if (dto.getName().equals(name)) {
+			itrt.remove();
+			System.out.println(list.size());
+			
+
+			}
 			}
 		}
+
+		System.out.println("the deleting name is "+name);
+		return null;
 		
 		
-		
-		
-		
+	}	
 	}
 
-}
 
+	
+
+	
 
