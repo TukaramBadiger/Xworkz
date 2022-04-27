@@ -1,7 +1,16 @@
 package collection.com.xworkz.politics.service;
 
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.ListIterator;
+
 import collection.com.xworkz.politics.dao.PoliticalPartyDAO;
+import collection.com.xworkz.politics.dao.PoliticalPartyDAOImpl;
 import collection.com.xworkz.politics.dto.PoliticalPartyDTO;
+import collection.com.xworkz.politics.sorting.PoliticalPartyId;
+import collection.com.xworkz.politics.sorting.PoliticalPartyNameAndId;
+import collection.com.xworkz.politics.sorting.PoliticalPartybyName;
 
 public class PoliticalServiceImpl implements PoliticalService {
 
@@ -28,8 +37,31 @@ public class PoliticalServiceImpl implements PoliticalService {
 	@Override
 	public void deleteByName(String name) {
 		if (name != null) {
-			dao.deleteByName("HDKs");
+			
+			System.out.println(dao.deleteByName(name));
 		}
 
+	}
+
+	
+
+	@Override
+	public List<PoliticalPartyDTO> sortByName() {
+		Comparator<PoliticalPartyDTO> sortName=new PoliticalPartybyName();
+		
+
+		return dao.sort(sortName);
+	}
+
+	@Override
+	public List<PoliticalPartyDTO> sortById() {
+        Comparator<PoliticalPartyDTO> sortId=new PoliticalPartyId();
+		return dao.sort(sortId);
+	}
+
+	@Override
+	public List<PoliticalPartyDTO> sortByNameAndId() {
+Comparator<PoliticalPartyDTO>sortNameandId=new PoliticalPartyNameAndId();
+		return dao.sort(sortNameandId);
 	}
 }

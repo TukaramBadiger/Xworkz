@@ -1,5 +1,7 @@
 package collection.com.xworkz.politics.dao;
 
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -42,17 +44,28 @@ public class PoliticalPartyDAOImpl implements PoliticalPartyDAO {
 		if (dto.getName().equals(name)) {
 			itrt.remove();
 			System.out.println(list.size());
-			
+			System.out.println("the deleting name is "+name);
 
 			}
 			}
 		}
 
-		System.out.println("the deleting name is "+name);
+		
 		return null;
 		
 		
-	}	
+	}
+
+	@Override
+	public List<PoliticalPartyDTO> sort(Comparator<PoliticalPartyDTO> comparator) {
+		if(comparator!=null) {
+			list.sort(comparator);
+			return list;
+		}
+		return null;
+	}
+
+	
 	}
 
 
