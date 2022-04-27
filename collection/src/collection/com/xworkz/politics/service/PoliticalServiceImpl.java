@@ -65,3 +65,11 @@ Comparator<PoliticalPartyDTO>sortNameandId=new PoliticalPartyNameAndId();
 		return dao.sort(sortNameandId);
 	}
 }
+
+
+
+
+
+
+
+

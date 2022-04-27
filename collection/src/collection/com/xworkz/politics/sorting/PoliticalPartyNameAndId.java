@@ -14,7 +14,7 @@ public class PoliticalPartyNameAndId implements Comparator<PoliticalPartyDTO>{
 		 
 		 
 		 
-		 return ((id.compareTo(id2))+(o1.getName().compareTo(o2.getName())));
+		 return ((id.compareTo(id2)+(o1.getName().compareTo(o2.getName()))));
 	}
 	
 
