@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+	<bean class="com.xworkz.camera.bean.Camera">
+		<constructor-arg value="Nike" type="String"></constructor-arg>
+		<constructor-arg value="Good" type="String"></constructor-arg>
+		<constructor-arg value="50000" type="int"></constructor-arg>
+		<property name="Warranty" value="5"></property>
+		<property name="pixel" value="120"></property>
+		<property name="storageCapacity" value="256"></property>
+	</bean>
+
+	<bean class="java.lang.Double">
+		<constructor-arg value="75.554" type="double"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Boolean">
+		<constructor-arg value="true" type="boolean"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Character">
+		<constructor-arg value="C"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Float">
+		<constructor-arg value="65.0" type="float"></constructor-arg>
+	</bean>
+
+	<bean class="java.math.BigDecimal">
+		<constructor-arg value="9900234671894582561" type="BigInteger"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="Tukaram">
+		<constructor-arg value="Tukaram" type="String"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="pdo">
+		<constructor-arg value="str" type="String"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="16">
+		<constructor-arg value="16" type="int"></constructor-arg>
+	</bean>
+
+
+	<bean class="com.xworkz.camera.bean.Camera" id="camera">
+		<property name="cameraList">
+			<list>
+				<value>Nike</value>
+				<value>Sony</value>
+				<value>>Nikon</value>
+				<value>>Apple</value>
+
+			</list>
+
+		</property>
+
+		<property name="Map">
+			<map>
+				<entry key="Camera" value="Nikon" />
+				<entry key="Lens" value="8x" />
+				<entry key="Rom" value="128Gb" />
+			</map>
+		</property>
+
+		<property name="Set">
+			<set>
+				<value>Samsung</value>
+				<value>Apple</value>
+				<value>Redmi</value>
+				<value>BlackBerry</value>
+			</set>
+		</property>
+
+
+		</bean>
+</beans>
